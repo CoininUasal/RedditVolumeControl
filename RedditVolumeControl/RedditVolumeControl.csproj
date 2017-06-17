@@ -205,10 +205,27 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Components\Dial\dial.js">
+      <DependentUpon>dial.jsx</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Components\Dial\dial.jsx" />
+    <Content Include="Scripts\Components\Dial\dial.min.js">
+      <DependentUpon>dial.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\Components\Tutorial.js">
+      <DependentUpon>Tutorial.jsx</DependentUpon>
+    </Content>
     <Content Include="Scripts\Components\Tutorial.jsx" />
+    <Content Include="Scripts\Components\Tutorial.min.js">
+      <DependentUpon>Tutorial.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -219,6 +236,20 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <None Include="Styles\Master.scss" />
+    <None Include="Styles\Variables.scss" />
+    <Content Include="Styles\Master.css">
+      <DependentUpon>Master.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\Master.min.css">
+      <DependentUpon>Master.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\Variables.css">
+      <DependentUpon>Variables.scss</DependentUpon>
+    </Content>
+    <Content Include="Styles\Variables.min.css">
+      <DependentUpon>Variables.css</DependentUpon>
+    </Content>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -237,6 +268,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\Components\Button\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
