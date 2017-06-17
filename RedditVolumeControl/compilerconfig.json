@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "Styles/Variables.css",
+    "inputFile": "Styles/Variables.scss"
+  },
+  {
+    "outputFile": "Styles/Master.css",
+    "inputFile": "Styles/Master.scss"
+  },
+  {
+    "outputFile": "Scripts/Components/Dial/dial.js",
+    "inputFile": "Scripts/Components/Dial/dial.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/Tutorial.js",
+    "inputFile": "Scripts/Components/Tutorial.jsx"
+  }
+]

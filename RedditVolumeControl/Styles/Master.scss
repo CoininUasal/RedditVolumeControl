@@ -1,0 +1,19 @@
+﻿@import "Variables.scss";
+
+.dialContainer {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    padding: 2.8em; /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+    border: dashed 1px;
+    border-radius: 50%;
+    margin: 1.75em auto 0;
+}
+
+.dialContainer-tick{
+
+}
+
+.dialContainer--default {
+    background-color: $primary-color;
+}
