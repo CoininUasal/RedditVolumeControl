@@ -4,19 +4,35 @@ var Dial = React.createClass({
     displayName: "Dial",
 
     render: function render() {
+        var dialStyle = {
+            transform: this.props.degPostion + "deg" + " 0 " + "-" + this.props.degPostion + "deg"
+        };
+
         return React.createElement(
             "div",
             { className: "dialContainer" },
-            React.createElement("div", { className: "dialContainer--default" })
+            React.createElement(
+                "div",
+                { className: "dialContainer-tick" },
+                React.createElement("div", { className: "dialContainer--default", style: dialStyle })
+            )
         );
     }
 });
 
-function DomReady(props) {
+function InDOM(props) {
     var DOMloaded = props.Element;
-    if (DOMloaded) {
-        ReactDOM.render(React.createElement(Dial, null), document.getElementById('dial'));
+    var elememts = document.getElementsByClassName("dial");
+    var position = 1;
+    for (var i = 0; i < elememts.length; i++) {
+        if (DOMloaded) {
+            var id = "dial" + position;
+            console.log(id);
+            console.log(document.getElementById(i));
+            ReactDOM.render(React.createElement(Dial, { degPostion: i }), document.getElementById("dial" + i));
+        }
     }
 }
-DomReady({ Element: document.getElementById("dial") ? true : false });
+
+InDOM({ Element: document.getElementsByClassName("dial") ? true : false });
 

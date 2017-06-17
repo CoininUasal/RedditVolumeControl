@@ -1,4 +1,5 @@
 ﻿@import "Variables.scss";
+@import "Mixin.scss";
 
 .dialContainer {
     position: relative;
@@ -10,10 +11,18 @@
     margin: 1.75em auto 0;
 }
 
-.dialContainer-tick{
-
+.dialContainer-tick {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4em;
+    height: 4em;
+    margin: -2em; /* 2em = 4em/2 */ /* half the width */
 }
 
 .dialContainer--default {
     background-color: $primary-color;
+    height: 100%;
 }

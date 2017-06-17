@@ -1,4 +1,4 @@
-﻿/*Main Colors*/
+/*Main Colors*/
 .dialContainer {
   position: relative;
   width: 24em;
@@ -9,6 +9,18 @@
   border-radius: 50%;
   margin: 1.75em auto 0; }
 
-.dialContainer--default {
-  background-color: #ffff93; }
+.dialContainer-tick {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4em;
+  height: 4em;
+  margin: -2em;
+  /* 2em = 4em/2 */
+  /* half the width */ }
 
+.dialContainer--default {
+  background-color: #ffff93;
+  height: 100%; }

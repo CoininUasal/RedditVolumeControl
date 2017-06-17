@@ -209,34 +209,36 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Components\Dial\dial.js">
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="gulpfile.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\components\Dial\dial.js">
       <DependentUpon>dial.jsx</DependentUpon>
     </Content>
-    <Content Include="Scripts\Components\Dial\dial.jsx" />
-    <Content Include="Scripts\Components\Dial\dial.min.js">
+    <Content Include="scripts\components\Dial\dial.jsx" />
+    <Content Include="scripts\components\Dial\dial.min.js">
       <DependentUpon>dial.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\Components\Tutorial.js">
+    <Content Include="scripts\components\Tutorial.js">
       <DependentUpon>Tutorial.jsx</DependentUpon>
     </Content>
-    <Content Include="Scripts\Components\Tutorial.jsx" />
-    <Content Include="Scripts\Components\Tutorial.min.js">
+    <Content Include="scripts\components\Tutorial.jsx" />
+    <Content Include="scripts\components\Tutorial.min.js">
       <DependentUpon>Tutorial.js</DependentUpon>
     </Content>
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <None Include="scripts\jquery.validate-vsdoc.js" />
+    <Content Include="scripts\jquery.validate.js" />
+    <Content Include="scripts\jquery.validate.min.js" />
+    <Content Include="scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="scripts\respond.js" />
+    <Content Include="scripts\respond.min.js" />
     <None Include="Styles\Master.scss" />
+    <None Include="Styles\Mixin.scss" />
     <None Include="Styles\Variables.scss" />
     <Content Include="Styles\Master.css">
       <DependentUpon>Master.scss</DependentUpon>
@@ -268,13 +270,13 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\Components\Button\" />
+    <Folder Include="scripts\components\Button\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

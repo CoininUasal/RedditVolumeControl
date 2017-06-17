@@ -12,11 +12,11 @@ var CommentBox = React.createClass({
     }
 });
 
-function DomReady(props) {
+function InDOM(props) {
     var DOMloaded = props.Element;
     if (DOMloaded) {
         ReactDOM.render(React.createElement(CommentBox, null), document.getElementById('content'));
     }
 }
-DomReady({ Element: document.getElementById("content") ? true : false });
+InDOM({ Element: document.getElementById("content") ? true : false });
 
