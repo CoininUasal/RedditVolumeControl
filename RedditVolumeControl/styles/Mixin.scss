@@ -1,0 +1,5 @@
+﻿
+
+@mixin rotateDial($deg,$transformation) { 
+	transform: rotate($deg) translate($transformation) rotate(0-$deg); 
+}

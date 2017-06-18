@@ -6,12 +6,9 @@
     <title>Hello React</title>
 </head>
 <body>
-    @for (int i = 1; i <= 60; i++)
-    {
-        var idName = "dial" + i;
-
-        <div id="@{@idName}" class="dial" position="@{@i}"></div>
-    }
+    
+    <div id="dial" class="dial"></div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
